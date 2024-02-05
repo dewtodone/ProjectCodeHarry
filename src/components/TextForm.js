@@ -41,14 +41,14 @@ export default function TextForm() {
                 type="button" onClick={handleShowOnclick} class="btn btn-primary mx-1">Show Text
               </button>
               <button
-                type="button" onClick={handleClearOnclick} class="btn btn-primary mx-1">Clear Text
+                type="button" onClick={handleClearOnclick} class="btn btn-danger mx-1">Clear Text
               </button>
              
               <button
-                type="button" onClick={handleUCase} class="btn btn-primary mx-1">Converto to Upper Case
+                type="button" onClick={handleUCase} class="btn btn-info mx-1">Converto to Upper Case
               </button>
               <button
-                type="button" onClick={handleLCase} class="btn btn-primary mx-1">Converto to Lower Case
+                type="button" onClick={handleLCase} class="btn btn-info mx-1">Converto to Lower Case
               </button>
             </div>
           </form>
