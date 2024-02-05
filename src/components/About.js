@@ -7,15 +7,17 @@ export default function About(props) {
     color: 'black',
     backgroundColor: 'white'
   })
-  
+  let Btndarklight = ""
   const handleToggleOnclick =() => {
     if (myStyle.color == 'white'){
+      Btndarklight = "light"
       setMyStyle({
         color: 'black',
         backgroundColor: 'white'
       })
       SetBtnText("Set to Dark Mode")
     }else {
+      Btndarklight = "dark"
       setMyStyle({
         color: 'white',
         backgroundColor: 'black'
@@ -24,9 +26,6 @@ export default function About(props) {
     }
   }
   
- 
-
-
   return (
     <>
      
@@ -111,7 +110,7 @@ export default function About(props) {
               <h3></h3>
             </div>
             <div class="col-md-2 text-center">
-              <button type="button" onClick={handleToggleOnclick} class="btn btn-primary mb-3">
+              <button type="button" onClick={handleToggleOnclick} class={`btn btn-warning mb-3`}>
                 {btntext}
               </button>
             </div>
